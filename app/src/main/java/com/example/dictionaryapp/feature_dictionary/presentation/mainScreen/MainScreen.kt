@@ -1,5 +1,6 @@
 package com.example.dictionaryapp.feature_dictionary.presentation.mainScreen
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,7 +26,7 @@ import com.example.dictionaryapp.core.utils.UiEvent
 @Composable
 fun MainScreen(
     viewModel: WordInfoViewModel = hiltViewModel(),
-    modifier: Modifier = Modifier,
+    @SuppressLint("ModifierParameter") modifier: Modifier = Modifier,
     scaffoldState: ScaffoldState,
     onNavigateUp: () -> Unit
 ) {

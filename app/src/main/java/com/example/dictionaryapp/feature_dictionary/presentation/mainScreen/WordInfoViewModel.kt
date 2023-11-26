@@ -22,7 +22,7 @@ import javax.inject.Inject
 @HiltViewModel
 class WordInfoViewModel @Inject constructor(
     private val getWord: GetWordInfo
-) : ViewModel() {
+) : ViewModel()  {
 
     var searchQuery by mutableStateOf("")
         private set
