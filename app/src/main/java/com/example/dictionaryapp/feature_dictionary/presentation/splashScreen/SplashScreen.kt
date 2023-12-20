@@ -43,10 +43,12 @@ fun SplashScreen(
             })
         )
 
+
         delay(2000L)
         onNavigate(UiEvent.Navigate(Route.MainScreen))
 
     }
+
 
     Column(
         modifier = modifier.fillMaxSize(),
